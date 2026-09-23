@@ -37,7 +37,7 @@ browserLaunch:
   # Use if you don't have 'localhost' in your hosts file
   avoidLocalhost: false
 # Server port
-port: 8000
+port: 10000
 # Interval in seconds to write a heartbeat file. Set to 0 to disable.
 # This is used primarily for Docker healthchecks.
 heartbeatInterval: 0
@@ -136,14 +136,14 @@ sso:
   # Set to ['*'] to trust all proxies (NOT RECOMMENDED unless you have other security measures in place)
   trustedProxies:
     - ::1
-    - 127.0.0.1
+    - 0.0.0.0
 
 # Host whitelist configuration. Recommended if you're using a listen mode
 hostWhitelist:
   # Enable or disable host whitelisting
   enabled: false
   # Scan incoming requests for potential host header spoofing
-  scan: true
+  scan: false
   # List of allowed hosts. Do not include localhost or IPs, these are safe.
   # Use a dot to create subdomain patterns.
   # Examples:
