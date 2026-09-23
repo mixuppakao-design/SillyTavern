@@ -136,7 +136,7 @@ sso:
   # Set to ['*'] to trust all proxies (NOT RECOMMENDED unless you have other security measures in place)
   trustedProxies:
     - ::1
-    - 0.0.0.0
+    - 127.0.0.1
 
 # Host whitelist configuration. Recommended if you're using a listen mode
 hostWhitelist:
